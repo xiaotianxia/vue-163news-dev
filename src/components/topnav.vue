@@ -1,5 +1,5 @@
 <template>
-    <div class="app-topbar">
+    <div class="app-topnav">
         <ul>
             <li v-for="item in navItems">
                 <router-link :to="item.link">{{item.text}}</router-link>
@@ -24,12 +24,12 @@ export default {
 </script>
 
 <style scoped>
-    .app-topbar {
-        height: 43px;
-        line-height: 43px;
+    .app-topnav {
+        height: .8rem;
+        line-height: .8rem;
         background-color: #f33;
     }
-    .app-topbar ul {
+    .app-topnav ul {
         white-space: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -39,7 +39,7 @@ export default {
         display: flex;
         width: 100%;
     }
-    .app-topbar ul li {
+    .app-topnav ul li {
         display: inline-block;
         -webkit-box-flex: 1;
         -webkit-flex: 1;
@@ -47,11 +47,15 @@ export default {
         vertical-align: middle;
         text-align: center;
     }
-    .app-topbar ul li a.active {
-        color:#3ba94d;
+    .app-topnav ul li a.active {
+        color: #fff;
+        font-size: .5rem;
     }
-    .app-topbar ul li a {
-        color: #4a4a4a;
-        font-size: 15px;
+    .app-topnav ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: rgba(255, 255, 255, .7);
+        font-size: .45rem;
     }
 </style>
