@@ -69,6 +69,9 @@ var readyPromise = new Promise(resolve => {
   _resolve = resolve
 })
 
+//mock数据
+app.use('/mock', express.static('./src/mock'));
+
 console.log('> Starting dev server...')
 devMiddleware.waitUntilValid(() => {
   console.log('> Listening at ' + uri + '\n')

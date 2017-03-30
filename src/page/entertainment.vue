@@ -1,18 +1,18 @@
 <template>
     <div class="app-entertainment">
         <top-nav></top-nav>
+        <h1>{{msg}}</h1>
     </div>
 </template>
 
 <script>
     import TopNav from '../components/topnav.vue'
     export default {
-        // name: 'entertainment',
-        // data () {
-        //     return {
-        //         msg: 'home'
-        //     }
-        // },
+        data () {
+            return {
+                msg: 'entertainment'
+            }
+        },
         components: {
             TopNav
         }

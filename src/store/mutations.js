@@ -1,11 +1,12 @@
-import {
-	GET_RECOMMEND_LIST
-} from './mutation-types.js'
+import * as TYPES from './mutation-types.js'
 
 
 export default {
-	[GET_RECOMMEND_LIST](state, list) {
-		console.log(list);
+	[TYPES.GET_RECOMMEND_LIST](state, list) {
 		state.recommendList = list;
+	},
+	[TYPES.GET_PIC_LIST](state, list) {
+		console.log(state);
+		state.picList = list;
 	}
 }
