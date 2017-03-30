@@ -1,20 +1,30 @@
 <template>
     <div class="app-joke">
         <top-nav></top-nav>
-        <h1>{{msg}}</h1>
+        <joke-list :jokeList="jokeList"></joke-list>
     </div>
 </template>
 
 <script>
+    import {mapState, mapActions} from 'vuex'
     import TopNav from '../components/topnav.vue'
+    import JokeList from '../components/jokeList.vue'
     export default {
-        data () {
-            return {
-                msg: 'joke'
-            }
+        computed: {
+            ...mapState([
+                'jokeList'
+            ])
+        },
+        methods: {
+            ...mapActions(['getJokeList'])
+        },
+        mounted() {
+            console.log(22);
+            this.getJokeList();
         },
         components: {
-            TopNav
+            TopNav,
+            JokeList
         }
     }
 </script>

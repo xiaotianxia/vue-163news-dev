@@ -25,6 +25,10 @@ export default {
 
 <style scoped lang="scss">
     .app-topnav {
+        position: fixed;
+        width: 100%;
+        top: .8rem;
+        z-index: 99;
         background-color: #f33;
         ul {
             white-space: nowrap;

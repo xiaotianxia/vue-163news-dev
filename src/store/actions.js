@@ -23,6 +23,14 @@ export default {
 				commit(types.GET_PIC_LIST, list);
 			}
 		});
+	},
+	getJokeList({commit, state}) {
+		axios.get('./mock/jokeList.json').then((response) => {
+			if(response.data.status == 1) {
+				var list = response.data.list;
+				commit(types.GET_JOKE_LIST, list);
+			}
+		});
 	}
 }
 

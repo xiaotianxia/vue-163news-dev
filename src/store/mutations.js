@@ -6,7 +6,9 @@ export default {
 		state.recommendList = list;
 	},
 	[TYPES.GET_PIC_LIST](state, list) {
-		console.log(state);
 		state.picList = list;
+	},
+	[TYPES.GET_JOKE_LIST](state, list) {
+		state.jokeList = list;
 	}
 }
