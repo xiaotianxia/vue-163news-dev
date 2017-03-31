@@ -8,7 +8,9 @@ Vue.use(Vuex);
 
 /* 项目全局State */
 const state = {
-	recommendList: []
+	recommendList: [],
+	picList: [],
+	jokeList: []
 }
 
 /* Store实例 */

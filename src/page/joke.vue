@@ -19,7 +19,6 @@
             ...mapActions(['getJokeList'])
         },
         mounted() {
-            console.log(22);
             this.getJokeList();
         },
         components: {
