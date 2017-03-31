@@ -14,12 +14,7 @@ export default {
 	getPicList({commit, state}) {
 		axios.get('./mock/picList.json').then((response) => {
 			if(response.data.status == 1) {
-				var list = response.data.list,
-					length = list.length,
-					mid = Math.floor(length / 2),
-					leftList = list.slice(0, mid),
-					rightList = list.slice(mid);
-				list = [leftList, rightList];
+				var list = response.data.list;
 				commit(types.GET_PIC_LIST, list);
 			}
 		});
