@@ -9,8 +9,11 @@ Vue.use(Vuex);
 /* 项目全局State */
 const state = {
 	recommendList: [],
+	showLoading: true,
+	sliders: [],
 	picList: [],
-	jokeList: []
+	jokeList: [],
+	entertainmentList: []
 }
 
 /* Store实例 */

@@ -23,7 +23,5 @@ npm run build --report
 ```
 
 TODO：
-entertainment
-slide
 scroll load
 topnav 多个

@@ -1,5 +1,6 @@
 import axios from 'axios'
 import * as types from './mutation-types.js'
+var vHeight = window.screen.height || window.innerHeight;
 
 /* 异步操作 */
 export default {
@@ -8,6 +9,19 @@ export default {
 			if(response.data.status == 1) {
 				var list = response.data.list;
 				commit(types.GET_RECOMMEND_LIST, list);
+			}
+		});
+	},
+	onScroll() {
+		var oLoading = document.querySelector('#loading'),
+			loadingTop = oLoading.scrollWidth;
+		console.log(loadingTop);
+	},
+	getSliders({commit, state}) {
+		axios.get('./mock/sliders.json').then((response) => {
+			if(response.data.status == 1) {
+				var list = response.data.list;
+				commit(types.GET_SLIDERS, list);
 			}
 		});
 	},
@@ -24,6 +38,16 @@ export default {
 			if(response.data.status == 1) {
 				var list = response.data.list;
 				commit(types.GET_JOKE_LIST, list);
+			}
+		});
+	},
+	getEntertainmentList({commit, state}) {
+		axios.get('./mock/entertainmentList.json').then((response) => {
+			if(response.data.status == 1) {
+				var list = response.data.list;
+				setTimeout(function() {
+					commit(types.GET_ENTERTAINMENT_LIST, list);
+				}, 1 * 1000);
 			}
 		});
 	}

@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "vue": "^2.2.2",
+    "vue-awesome-swiper": "^2.4.0",
     "vue-router": "^2.2.0",
     "vuex": "^2.2.1"
   },

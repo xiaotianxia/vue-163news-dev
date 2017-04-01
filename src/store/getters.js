@@ -1,5 +1,6 @@
 export default {
 	recommendList: state => state.recommendList,
+	sliders: state => state.sliders,
 	picList: state => {
 		var list = state.picList,
 			length = list.length,
@@ -9,5 +10,6 @@ export default {
 		state.picList = [leftList, rightList];
 		return state.picList;
 	},
-	jokeList: state => state.jokeList
+	jokeList: state => state.jokeList,
+	entertainmentList: state => state.entertainmentList
 }

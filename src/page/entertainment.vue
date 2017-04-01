@@ -1,24 +1,29 @@
 <template>
     <div class="app-entertainment">
         <top-nav></top-nav>
-        <h1>{{msg}}</h1>
+        <entertainment-list :entertainmentList="entertainmentList"></entertainment-list>
     </div>
 </template>
 
 <script>
+    import {mapState, mapActions} from 'vuex'
     import TopNav from '../components/topnav.vue'
+    import EntertainmentList from '../components/entertainmentList.vue'
     export default {
-        data () {
-            return {
-                msg: 'entertainment'
-            }
+        computed: {
+            ...mapState([
+                'entertainmentList'
+            ])
+        },
+        methods: {
+            ...mapActions(['getEntertainmentList'])
+        },
+        mounted() {
+            this.getEntertainmentList();
         },
         components: {
-            TopNav
+            TopNav,
+            EntertainmentList
         }
     }
 </script>
-
-<style scoped>
-    
-</style>
