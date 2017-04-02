@@ -1,7 +1,7 @@
 <template>
     <div class="app-army">
         <top-nav></top-nav>
-        未开发
+        <h1>未开发</h1>
     </div>
 </template>
 
