@@ -4,6 +4,9 @@ import Recommend from '@/page/recommend'
 import Entertainment from '@/page/entertainment'
 import Pic from '@/page/pic'
 import Joke from '@/page/joke'
+import PE from '@/page/pe'
+import Health from '@/page/health'
+import Army from '@/page/army'
 
 Vue.use(Router)
 
@@ -33,6 +36,21 @@ export default new Router({
       path: '/joke',
       name: 'Joke',
       component: Joke
+    },
+    {
+      path: '/pe',
+      name: 'PE',
+      component: PE
+    },
+    {
+      path: '/health',
+      name: 'Health',
+      component: Health
+    },
+    {
+      path: '/army',
+      name: 'Army',
+      component: Army
     }
   ]
 })

@@ -1,13 +1,15 @@
 <template>
     <div class="app-recommend">
         <top-nav></top-nav>
+        <loading v-show="showLoading"></loading>
         <sliders></sliders>
         <recommend-list :recommendList="recommendList"></recommend-list>
-        <loading v-show="showLoading" id="loading"></loading>
+        <loading v-show="showLoadingMore"></loading>
     </div>
 </template>
 
 <script>
+    import _ from 'underscore'
     import {mapState, mapActions} from 'vuex'
     import TopNav from '../components/topnav.vue'
     import Sliders from '../components/sliders.vue'
@@ -17,15 +19,19 @@
         computed: {
             ...mapState([
                 'recommendList',
-                'showLoading'
+                'showLoading',
+                'showLoadingMore'
             ])
         },
         methods: {
-            ...mapActions(['getRecommendList', 'onScroll'])
+            ...mapActions(['getRecommendList', 'onHandleScroll'])
         },
         mounted() {
             this.getRecommendList();
-            window.addEventListener('scroll',this.onScroll);
+            window.addEventListener('scroll', 
+                _.debounce(() => {
+                    this.onHandleScroll('recommendList');
+                }, 500));
         },
         components: {
             TopNav,

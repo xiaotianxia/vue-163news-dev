@@ -16,7 +16,10 @@ export default {
                 {text:"推荐", link:"/recommend"},
                 {text:"娱乐", link:"/entertainment"},
                 {text:"图片", link:"/pic"},
-                {text:"段子", link:"/joke"}
+                {text:"段子", link:"/joke"},
+                {text:"体育", link:"/pe"},
+                {text:"健康", link:"/health"},
+                {text:"军事", link:"/army"}
             ]
         }
     }
@@ -30,22 +33,19 @@ export default {
         top: .8rem;
         z-index: 99;
         background-color: #f33;
+        &::-webkit-scrollbar {
+            display: none;
+        }
         ul {
             white-space: nowrap;
             overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            display: -o-box;
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: flex;
+            // display: flex;
             width: 100%;
             li {
                 display: inline-block;
                 height: .8rem;
                 line-height: .8rem;
-                -webkit-box-flex: 1;
-                -webkit-flex: 1;
-                flex: 1;
+                width: 2rem;// flex: 1;
                 vertical-align: middle;
                 text-align: center;
                 a {

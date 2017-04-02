@@ -1,6 +1,7 @@
 <template>
     <div class="app-entertainment">
         <top-nav></top-nav>
+        <loading v-show="showLoading"></loading>
         <entertainment-list :entertainmentList="entertainmentList"></entertainment-list>
     </div>
 </template>
@@ -9,10 +10,13 @@
     import {mapState, mapActions} from 'vuex'
     import TopNav from '../components/topnav.vue'
     import EntertainmentList from '../components/entertainmentList.vue'
+    import Loading from '../components/loading.vue'
     export default {
         computed: {
             ...mapState([
-                'entertainmentList'
+                'entertainmentList',
+                'showLoading',
+                'showLoadingMore'
             ])
         },
         methods: {
@@ -23,7 +27,8 @@
         },
         components: {
             TopNav,
-            EntertainmentList
+            EntertainmentList,
+            Loading
         }
     }
 </script>

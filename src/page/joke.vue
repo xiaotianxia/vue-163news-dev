@@ -1,6 +1,7 @@
 <template>
     <div class="app-joke">
         <top-nav></top-nav>
+        <loading v-show="showLoading"></loading>
         <joke-list :jokeList="jokeList"></joke-list>
     </div>
 </template>
@@ -9,10 +10,13 @@
     import {mapState, mapActions} from 'vuex'
     import TopNav from '../components/topnav.vue'
     import JokeList from '../components/jokeList.vue'
+    import Loading from '../components/loading.vue'
     export default {
         computed: {
             ...mapState([
-                'jokeList'
+                'jokeList',
+                'showLoading',
+                'showLoadingMore'
             ])
         },
         methods: {
@@ -23,7 +27,8 @@
         },
         components: {
             TopNav,
-            JokeList
+            JokeList,
+            Loading
         }
     }
 </script>

@@ -1,49 +1,49 @@
 <template>
     <div class="content-list swipe-content clearfix">
-        <div class="content-list-east">
-            <section v-for="item in picList[0]" class="m_photoset_square m_article list-item clearfix" id="92883">
-            <a href="javascript:;">
-                <div class="m_photoset_square_img">
-                    <img :src="item.tcover">
-                </div>
-                <div class="m_photoset_square_info">
-                    <div class="m_photoset_square_title">
-                        <span>{{item.setname}}</span>
+        <ul class="content-list-east">
+            <li v-for="item in picList[0]" class="m_photoset_square m_article list-item clearfix" id="92883">
+                <a href="javascript:;">
+                    <div class="m_photoset_square_img">
+                        <img :src="item.tcover">
                     </div>
-                    <div class="m_photoset_square_desc clearfix">
-                        <div class="m_photoset_square_desc_l">
-                            <span class="iconfont">浏览{{item.replynum}}</span>
+                    <div class="m_photoset_square_info">
+                        <div class="m_photoset_square_title">
+                            <span>{{item.setname}}</span>
                         </div>
-                        <div class="m_photoset_square_desc_r">
-                            <span class="iconfont">{{item.imgsum}}p</span>
+                        <div class="m_photoset_square_desc clearfix">
+                            <div class="m_photoset_square_desc_l">
+                                <span class="iconfont">浏览{{item.replynum}}</span>
+                            </div>
+                            <div class="m_photoset_square_desc_r">
+                                <span class="iconfont">{{item.imgsum}}p</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-            </section>
-        </div>
-        <div class="content-list-west">
-            <section v-for="item in picList[1]" class="m_photoset_square m_article list-item clearfix" id="92909">
-            <a :href="item.seturl">
-            <div class="m_photoset_square_img">
-                <img :src="item.tcover">
-            </div>
-            <div class="m_photoset_square_info">
-                <div class="m_photoset_square_title">
-                    <span>{{item.setname}}</span>
-                </div>
-                <div class="m_photoset_square_desc clearfix">
-                    <div class="m_photoset_square_desc_l">
-                        <span class="iconfont">浏览{{item.replynum}}</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="content-list-west">
+            <li v-for="item in picList[1]" class="m_photoset_square m_article list-item clearfix" id="92909">
+                <a :href="item.seturl">
+                    <div class="m_photoset_square_img">
+                        <img :src="item.tcover">
                     </div>
-                    <div class="m_photoset_square_desc_r">
-                        <span class="iconfont">{{item.imgsum}}p</span>
+                    <div class="m_photoset_square_info">
+                        <div class="m_photoset_square_title">
+                            <span>{{item.setname}}</span>
+                        </div>
+                        <div class="m_photoset_square_desc clearfix">
+                            <div class="m_photoset_square_desc_l">
+                                <span class="iconfont">浏览{{item.replynum}}</span>
+                            </div>
+                            <div class="m_photoset_square_desc_r">
+                                <span class="iconfont">{{item.imgsum}}p</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            </a>
-            </section>
-        </div>
+                </a>
+            </li>
+        </ul>
     </div>
 </template>
 
