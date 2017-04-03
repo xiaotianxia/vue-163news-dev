@@ -1,6 +1,5 @@
 <template>
     <div class="app-recommend">
-        <top-nav></top-nav>
         <loading v-show="showLoading"></loading>
         <sliders></sliders>
         <recommend-list :recommendList="recommendList"></recommend-list>
@@ -11,7 +10,6 @@
 <script>
     import _ from 'underscore'
     import {mapState, mapActions} from 'vuex'
-    import TopNav from '../components/topnav.vue'
     import Sliders from '../components/sliders.vue'
     import RecommendList from '../components/recommendList.vue'
     import Loading from '../components/loading.vue'
@@ -34,7 +32,6 @@
                 }, 500));
         },
         components: {
-            TopNav,
             RecommendList,
             Sliders,
             Loading

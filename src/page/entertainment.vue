@@ -1,6 +1,5 @@
 <template>
     <div class="app-entertainment">
-        <top-nav></top-nav>
         <loading v-show="showLoading"></loading>
         <entertainment-list :entertainmentList="entertainmentList"></entertainment-list>
     </div>
@@ -8,7 +7,6 @@
 
 <script>
     import {mapState, mapActions} from 'vuex'
-    import TopNav from '../components/topnav.vue'
     import EntertainmentList from '../components/entertainmentList.vue'
     import Loading from '../components/loading.vue'
     export default {
@@ -26,7 +24,6 @@
             this.getEntertainmentList();
         },
         components: {
-            TopNav,
             EntertainmentList,
             Loading
         }

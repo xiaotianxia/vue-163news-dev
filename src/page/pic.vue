@@ -1,6 +1,6 @@
 <template>
     <div class="app-pic">
-        <top-nav></top-nav>
+        <!-- <top-nav></top-nav> -->
         <loading v-show="showLoading"></loading>
         <pic-list :picList="picList"></pic-list>
     </div>

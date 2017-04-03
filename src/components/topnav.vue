@@ -33,19 +33,18 @@ export default {
         top: .8rem;
         z-index: 99;
         background-color: #f33;
-        &::-webkit-scrollbar {
-            display: none;
-        }
         ul {
             white-space: nowrap;
             overflow-x: auto;
-            // display: flex;
             width: 100%;
+            &::-webkit-scrollbar {
+                display: none;
+            }
             li {
                 display: inline-block;
                 height: .8rem;
                 line-height: .8rem;
-                width: 2rem;// flex: 1;
+                width: 2rem;
                 vertical-align: middle;
                 text-align: center;
                 a {
@@ -55,6 +54,7 @@ export default {
                     color: rgba(255, 255, 255, .7);
                     font-size: .45rem;
                     transition: all .5s ease;
+                    text-decoration: none;
                     &.router-link-active {
                         color: #fff;
                         font-size: .5rem;

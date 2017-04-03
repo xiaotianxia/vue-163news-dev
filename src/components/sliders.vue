@@ -47,3 +47,19 @@
         }
     }
 </script>
+<style>
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-pagination-bullet {
+        margin: 0 20px!important;
+        width: 40px!important;
+        height: 40px!important;
+        opacity: .5!important;
+        background-color: #fff!important;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #007aff!important;
+    }
+</style>
