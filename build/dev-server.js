@@ -71,6 +71,7 @@ var readyPromise = new Promise(resolve => {
 
 //mock数据
 app.use('/mock', express.static('./src/mock'));
+app.use('/assets', express.static('./src/assets'));
 
 console.log('> Starting dev server...')
 devMiddleware.waitUntilValid(() => {
