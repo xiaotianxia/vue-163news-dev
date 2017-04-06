@@ -56,8 +56,8 @@
 <style scoped>
     .content-list{background:#f6f6f6}
     .content-list img{background:url(http://img2.cache.netease.com/f2e/wap/common/images/bg_img_sm.png) center center no-repeat;background-size:contain}
-    .content-list-east{float:left;width:4.6rem;margin-left:.3rem;overflow:hidden}
-    .content-list-west{float:left;width:4.6rem;overflow:hidden;margin-left:.2rem}
+    .content-list-east{float:left;width:47%;margin-left:.2rem;overflow:hidden}
+    .content-list-west{float:left;width:47%;overflow:hidden;margin-left:.2rem}
     section:last-child{border-bottom:0}
     .m_photoset .m_photoset_title{font-size:.34rem;margin-bottom:.2rem;color:#404040;display:-webkit-flex;display:-ms-flexbox;display:flex}
     .m_photoset .m_photoset_pic{margin:.22rem 0;display:block}

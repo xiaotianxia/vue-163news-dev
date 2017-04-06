@@ -32,3 +32,9 @@
         }
     }
 </script>
+<style>
+    .app-pic {
+        overflow: hidden;
+        background-color: #ececec;
+    }
+</style>
