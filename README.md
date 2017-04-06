@@ -2,11 +2,11 @@
 [演示地址](https://xiaotianxia.github.io/vue-163news-deployed/#/recommend)
 > A Vue.js project 简单仿网易新闻m站
 ## 技术栈
-### vue提供的脚手架vue-cli
-### webpack
-### vuex
-### vue-router
-### axios
+- [x] vue提供的脚手架vue-cli
+- [x] webpack
+- [x] vuex
+- [x] vue-router
+- [x] axios
 
 ### Build Setup
 ``` 
