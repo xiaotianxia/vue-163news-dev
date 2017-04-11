@@ -5,9 +5,11 @@
             <div class="app-topbar-logo"></div>
         </div>
     	<top-nav></top-nav>
-        <keep-alive>
-            <router-view></router-view>
-        </keep-alive>
+        <transition name="appTransition">
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
+        </transition>
     </div>
 </template>
 
@@ -50,5 +52,14 @@
     .app-health,
     .app-army {
         padding-top: 1.6rem;
+    }
+    .appTransition-enter-active,
+    .appTransition-leave-active {
+        transition: opacity .3s
+    }
+
+    .appTransition-enter,
+    .appTransition-leave-active {
+        opacity: 0;
     }
 </style>
