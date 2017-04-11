@@ -11,7 +11,10 @@
                 </a>
                 <div class="m_article_desc clearfix">
                     <div class="m_article_desc_l">
-                        <span class="m_article_time">{{item.source}}</span>
+                        <span>来源：{{item.source}}</span>
+                    </div>
+                    <div class="m_article_desc_r">
+                        <span>评论：{{item.replyCount}}</span>
                     </div>
                 </div>
             </li>
@@ -41,9 +44,7 @@
     .m_article_joke .m_article_img .m_article_title{width:100%;position:absolute;bottom:0;background:rgba(0,0,0,0.4)}
     .m_article_joke .m_article_img .m_article_title span{font-size:.34rem;line-height:.42rem;margin:.25rem .2rem;color:#fff;display:inline-block}
     .m_article_joke .m_article_digest{font-size:.32rem;margin-bottom:.25rem;color:#404040;line-height:.42rem;width:100%;display:inline-block;text-align:left;}
+    .m_article_joke .m_article_desc {overflow: hidden;}
     .m_article_joke .m_article_desc .m_article_desc_l{float:left;color:#888}
     .m_article_joke .m_article_desc .m_article_desc_r{float:right;color:#888}
-    .m_article_joke .m_article_desc .m_article_desc_r .share-joke{padding:.2rem;font-size:.32rem}
-    .m_article_joke .more{text-align:center;color:#888;background:#f3f3f3;line-height:.64rem;height:.64rem}
-    .m_article_joke .more span{-webkit-transform:scale(0.4);-ms-transform:scale(0.4);transform:scale(0.4);display:inline-block;font-size:.32rem;line-height:.64rem;vertical-align:bottom}
 </style>

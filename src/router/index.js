@@ -11,46 +11,46 @@ import Army from '@/page/army'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: '/',
-      component: Recommend
-    },
-    {
-      path: '/recommend',
-      name: 'Recommend',
-      component: Recommend
-    },
-    {
-      path: '/entertainment',
-      name: 'Entertainment',
-      component: Entertainment
-    },
-    {
-      path: '/pic',
-      name: 'Pic',
-      component: Pic
-    },
-    {
-      path: '/joke',
-      name: 'Joke',
-      component: Joke
-    },
-    {
-      path: '/pe',
-      name: 'PE',
-      component: PE
-    },
-    {
-      path: '/health',
-      name: 'Health',
-      component: Health
-    },
-    {
-      path: '/army',
-      name: 'Army',
-      component: Army
-    }
-  ]
+    routes: [
+        {
+            path: '/',
+            name: '/',
+            redirect: '/recommend'
+        },
+        {
+            path: '/recommend',
+            name: 'Recommend',
+            component: Recommend
+        },
+        {
+            path: '/entertainment',
+            name: 'Entertainment',
+            component: Entertainment
+        },
+        {
+            path: '/pic',
+            name: 'Pic',
+            component: Pic
+        },
+        {
+            path: '/joke',
+            name: 'Joke',
+            component: Joke
+        },
+        {
+            path: '/pe',
+            name: 'PE',
+            component: PE
+        },
+        {
+            path: '/health',
+            name: 'Health',
+            component: Health
+        },
+        {
+            path: '/army',
+            name: 'Army',
+            component: Army
+        }
+    ]
 })
