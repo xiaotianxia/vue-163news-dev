@@ -1,5 +1,5 @@
 # vue-test-project
-[演示地址](https://xiaotianxia.github.io/vue-163news-deployed/#/recommend)
+[DEMO](https://xiaotianxia.github.io/vue-163news-dev/dist/#/recommend)
 > A Vue.js project 简单仿网易新闻m站
 ## 技术栈
 - [x] vue提供的脚手架vue-cli
@@ -9,7 +9,7 @@
 - [x] axios
 
 ### Build Setup
-``` 
+```
 npm install
 ```
 
@@ -27,6 +27,3 @@ npm run build
 ```
 npm run build --report
 ```
-
-TODO：
-详情页
